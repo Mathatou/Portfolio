@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>AUBRY Mathias - Head In The Cloud</title>
+  <link rel="icon" type="image/x-icon" href="img/myBigCrane.png">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style_HITC.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <style>
+    /* Séparateur vertical entre deux colonnes côte à côte (à partir du breakpoint medium) */
+    @media (min-width: 601px) {
+      .row .col.m6 + .col.m6 {
+        border-left: 1px solid rgba(0, 0, 0, 0.12);
+        padding-left: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="0_index.html" class="brand-logo">
+        <img src="img/myBigCrane.png" alt="MyLogo" style="height: 60px;">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index_en.html">Passer en EN</a></li>
+      </ul>
+      <!-- On peut changer la vue en mobile ici, pour débugger faire F12 sur le site  -->
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index_en.html">Passer en EN</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="overlay"></div>
+    <div class="section no-pad-bot" style="padding-left: 0px;">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Head In The Cloud</h1>
+        <p class="header center light" style="font-size: 1.1rem; margin-top: -10px;">
+          Projet Unity3D — Réalité Virtuelle — ESIEE Paris, E4FI (2025–2026)
+        </p>
+        <div class="row center" style="margin-bottom: 0;">
+          <a href="https://github.com/Mathatou/HeadInTheCloud" target="_blank"
+            class="btn-large waves-effect waves-light teal lighten-1" style="margin: 6px;">
+            <i class="material-icons left">code</i>Voir sur GitHub
+          </a>
+          <a href="https://youtu.be/mjYn0mLeB84" target="_blank"
+            class="btn-large waves-effect waves-light teal lighten-1" style="margin: 6px;">
+            <i class="material-icons left">play_circle_filled</i>Voir la démo
+          </a>
+        </div>
+        <div class="row center" style="margin-top: 24px;">
+          <a href="0_index.html" class="light grey-text text-lighten-3">&larr; Retour aux projets</a>
+        </div>
+        <br>
+      </div>
+    </div>
+    <div class="parallax"><img src="background2.jpg" alt="Head In The Cloud background"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h5 class="section-title">📌 Description du projet</h5>
+            <p class="light">
+              Head In The Cloud est un jeu en réalité virtuelle réalisé dans le cadre de l'unité Projet
+              Multidisciplinaire 4 à ESIEE Paris en E4FI. Il s'agit d'une expérience d'exploration, de tir et de
+              réflexion. Le joueur commence dans un lobby central (forêt avec feu de camp) et traverse des portails
+              pour accéder à trois expériences distinctes : un mini-jeu de tir dans un univers Far West, un
+              labyrinthe d'horreur, et un escape-game de réflexion.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin: 2.5rem 0;"></div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h5 class="section-title">🛠 Technologies utilisées</h5>
+            <ul class="light">
+              <li>Moteur de jeu : <b>Unity</b></li>
+              <li>Langage de programmation : <b>C#</b></li>
+              <li>Logiciels tiers : <b>GitHub, GIMP, Blender, Audacity</b></li>
+              <li>Casque VR : <b>Meta Quest 2</b></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h5 class="section-title">🎮 Comment jouer ?</h5>
+            <ol class="light">
+              <li>Télécharger sur GitHub la release du jeu</li>
+              <li>Récupérer l'APK</li>
+              <li>Transférer l'APK sur le casque</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin: 2.5rem 0;"></div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h5 class="section-title">✨ Points forts techniques</h5>
+            <ul class="light">
+              <li><b>Interactivité (XRI) :</b> briquet pour allumer le feu de camp, portails de téléportation, tir
+                au pistolet via raycasting avec scoreboard dynamique, collecte d'orbes, manipulation de tiroirs,
+                manivelles et échelles dans l'escape game avec énigmes randomisées.</li>
+              <li><b>Confort VR :</b> deux modes de déplacement (continu au joystick gauche, téléportation au
+                joystick droit) pour limiter le motion sickness ; capacité de saut retirée pour la même raison.</li>
+              <li><b>Optimisation Quest 2 :</b> direction artistique low-poly, brouillard du labyrinthe géré par un
+                système de particules plutôt qu'une brume globale, shaders personnalisés via ShaderGraph.</li>
+              <li><b>Rendu :</b> shaders sur-mesure pour les portails (distorsion, couleur unique par niveau), le feu
+                de camp, l'oscillation d'objets guidant le regard, des decals, ainsi que des effets VFX (muzzle
+                flash, explosions).</li>
+              <li><b>Immersion :</b> scènes à taille humaine, ambiance sonore propre à chaque univers (musique et
+                bruitages en partie enregistrés par l'équipe), onboarding progressif dans le lobby.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin: 2.5rem 0;"></div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h5 class="section-title">🎲 Inspirations</h5>
+            <ul class="light">
+              <li><b>VRChat</b> → le hub central reliant les niveaux par des portails</li>
+              <li><b>Beat Saber</b> → le mini-jeu de tir sur cibles de couleurs</li>
+              <li><b>Where Darkness Took Them</b> → le labyrinthe d'horreur, amplifié par le passage en VR</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin: 2.5rem 0;"></div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h5 class="section-title">🎨 Assets</h5>
+            <ul class="light">
+              <li><a href="https://assetstore.unity.com/packages/3d/environments/fantasy/polygon-horror-mansion-low-poly-3d-art-by-synty-213346" target="_blank">Polygon Horror Mansion (Synty)</a></li>
+              <li><a href="https://syntystore.com/products/polygon-police-station" target="_blank">Polygon Police Station (Synty)</a></li>
+              <li><a href="https://assetstore.unity.com/packages/3d/environments/low-poly-winter-log-cabin-pack-347838" target="_blank">Low Poly Winter Log Cabin Pack</a></li>
+              <li><a href="https://assetstore.unity.com/packages/2d/fonts/boldpixels-font-332078" target="_blank">Bold Pixel Font</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin: 2.5rem 0;"></div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h5 class="section-title">👥 Équipe</h5>
+            <ul class="light">
+              <li>AUBRY Mathias — Développeur / Game dev</li>
+              <li>MELIANI Samy — Développeur / Game dev</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h5 class="section-title">📜 Licence &amp; Crédits</h5>
+            <p class="light" style="font-size: .9rem; line-height: 1.6rem;">
+              Ce projet est réalisé dans un cadre éducatif et n'est pas destiné à une diffusion commerciale. Les
+              assets utilisés appartiennent à leurs créateurs respectifs et sont utilisés sous licence appropriée.
+              Merci à APPUDURAI Achveiya, étudiante à ESIEE Paris en E3E, pour avoir prêté sa voix aux dialogues du
+              PNJ.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="overlay"></div>
+    <div class="section no-pad-bot" style="padding-left: 0px;">
+      <div class="container">
+        <div class="row center">
+          <h4 class="header col s12 light">Retrouvez mes liens GitHub et LinkedIn ainsi que mes projets dans le section
+            ci-dessous</h4>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Liens</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-4" href="https://github.com/Mathatou">Github</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-4" href="https://www.linkedin.com/in/mathias-aubry/">LinkedIn</a>
+            </li>
+          </ul>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Projets</h5>
+          <ul>
+            <li><a class="white-text" href="https://github.com/Mathatou/Unity_Project_WDTT">Where Darkness Took
+                Them</a></li>
+            <li><a class="white-text" href="https://github.com/Mathatou/Gamejam">GameJam - Hold'em !</a></li>
+            <li><a class="white-text" href="https://github.com/Mathatou/HeadInTheCloud">Head In The Cloud</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made using <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>

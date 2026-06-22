@@ -1,0 +1,55 @@
+/* ============================================
+   Thème dédié à la page "Head In The Cloud"
+   Ambiance VR / ciel numérique : tons bleu-violet
+   ============================================ */
+
+body {
+  background: linear-gradient(180deg, #eaf1ff 0%, #bbc7e1 45%, #eaf1ff 100%);
+}
+
+.icon-block {
+  background-color: rgba(91, 124, 250, 0.04);
+  border-radius: 12px;
+}
+
+#index-banner h1 {
+  color: #7ad7ff !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.section-title {
+  color: #2d3e8c;
+  border-bottom: 2px solid #5b7cfa;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+#index-banner .btn-large {
+  background: linear-gradient(90deg, #5b7cfa, #8e6bff);
+  box-shadow: 0 0 15px rgba(91, 124, 250, 0.5);
+}
+
+#index-banner .btn-large:hover {
+  box-shadow: 0 0 25px rgba(91, 124, 250, 0.85);
+}
+
+.icon-block a {
+  color: #4a5fd1;
+}
+
+.icon-block a:hover {
+  color: #6b7ff0;
+}
+
+/* Séparateur vertical entre deux colonnes côte à côte (à partir du breakpoint medium) */
+@media (min-width: 601px) {
+  .row .col.m6 + .col.m6 {
+    border-left: 1px solid rgba(91, 124, 250, 0.25);
+    padding-left: 2rem;
+  }
+}
+
+/* Teinte des séparateurs horizontaux (.divider) sur cette page */
+.divider {
+  background-color: rgba(91, 124, 250, 0.2);
+}
