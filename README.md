@@ -17,7 +17,7 @@ Portfolio personnel présentant mon parcours, mes compétences et mes projets, r
 
 ```
 .
-├── 0_index.html              # Page d'accueil (présentation, formation, projets, hobbies)
+├── index.html              # Page d'accueil (présentation, formation, projets, hobbies)
 ├── 1_WDTT.html                # Page détaillée — Where Darkness Took Them
 ├── 1_Color-Shooter.html       # Page détaillée — Head In The Cloud
 ├── css/
@@ -48,7 +48,7 @@ git clone https://github.com/Mathatou/<nom-du-repo>.git
 cd <nom-du-repo>
 ```
 
-Puis ouvrir `0_index.html` dans un navigateur, ou servir le dossier avec un petit serveur local, par exemple :
+Puis ouvrir `index.html` dans un navigateur, ou servir le dossier avec un petit serveur local, par exemple :
 
 ```bash
 python3 -m http.server
