@@ -1,0 +1,45 @@
+/* ============================================
+   Thème dédié à la page d'accueil (index)
+   Reprend la couleur teal déjà présente sur le site
+   ============================================ */
+
+#index-banner h1 {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+body {
+  background: linear-gradient(180deg, #a3e2ca 0%, #166465 45%, #a3e2ca 100%);
+}
+.section-title {
+  color: #00695c;
+  border-bottom: 2px solid #26a69a;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.icon-block a {
+  color: #00897b;
+}
+
+.icon-block a:hover {
+  color: #26a69a;
+}
+
+#monGrosCrane {
+  border: 4px solid #26a69a;
+  box-shadow: 0 0 20px rgba(38, 166, 154, 0.4);
+}
+
+/* Séparateurs verticaux entre colonnes (Formation/Carrière et Hobbies),
+   à partir du breakpoint medium uniquement */
+@media (min-width: 601px) {
+  #formation-row > .col + .col,
+  #hobbies-row > .col + .col {
+    border-left: 1px solid rgba(38, 166, 154, 0.3);
+    padding-left: 2rem;
+  }
+}
+
+/* Teinte des séparateurs horizontaux (.divider) sur cette page */
+.divider {
+  background-color: rgba(38, 166, 154, 0.25);
+}
