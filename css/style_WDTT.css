@@ -4,10 +4,9 @@
    ============================================ */
 
 body {
-  background-color: #150a0e;
+  background: linear-gradient(180deg, #150a0e 0%, #4a2432 45%, #150a0e 100%);
   color: #d9c3c9;
 }
-
 .icon-block {
   background-color: rgba(255, 255, 255, 0.03);
   border-radius: 12px;
