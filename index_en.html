@@ -7,9 +7,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <title>AUBRY Mathias - Portfolio</title>
   <link rel="icon" type="image/x-icon" href="img/myBigCrane.png">
-  <link href="https://fonts.googleapis.com/icon?family=Material-Icons" rel="stylesheet">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
@@ -18,11 +20,11 @@
     <div class="nav-wrapper container">
 
       <!-- Logo -->
-      <a id="logo-container" href="index.html" class="brand-logo">
+      <a id="logo-container" href="index_en.html" class="brand-logo">
         <img src="img/myBigCrane.png" alt="MyLogo" class="logo-img">
       </a>
 
-      <!-- Menu Desktop -->
+      <!-- Desktop Menu -->
       <ul class="right hide-on-med-and-down boutons_navbar">
         <li>
           <a href="https://github.com/Mathatou/" target="_blank" aria-label="GitHub">
@@ -97,30 +99,36 @@
       <div class="container">
         <br><br>
         <h1 class="header center teal-text text-lighten-2">AUBRY Mathias</h1>
-        <!-- CV a traduire en anglais-->
+        <div class="row center">
+
+        </div>
         <div class="row center">
           <a href="CV_AUBRYM.pdf" id="download-button" target="_blank"
             class="btn-large waves-effect waves-light teal lighten-1">Download my resume !</a>
         </div>
-
         <br><br>
+
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Background image 1"></div>
+    <div class="parallax"><img src="./img/background1.jpg" alt="Background image 1"></div>
   </div>
+
 
   <div class="container">
     <div class="section">
 
+      <!-- ===== Introduction ===== -->
       <div class="row">
+
+        <!-- ===== About ===== -->
         <div class="col s12 m8">
           <div class="icon-block">
             <h5 class="section-title">About Me</h5>
             <p class="light">
-              My name is AUBRY Mathias. I am a graduate (or soon-to-be graduate) of ESIEE Paris engineering school.
-              Following a general computer science curriculum, I specialized through my apprenticeship and personal
-              projects
-              in development using Unity (3D and VR) and Unreal Engine.
+              My name is AUBRY Mathias. <br>
+              A graduate of ESIEE Paris engineering school with a background in general computer science,
+              I specialized through my apprenticeship and personal projects in development with Unity (3D
+              and VR) and Unreal Engine.
             </p>
 
             <ul>
@@ -131,12 +139,13 @@
           </div>
         </div>
 
+        <!-- Image -->
         <div class="col s12 m4 center">
-          <img id="monGrosCrane" class="responsive-img circle" src="img/myBigCrane.png" alt="Profile Picture">
+          <img id="monGrosCrane" class="responsive-img circle" src="img/myBigCrane.png" alt="My crane is missing">
         </div>
-      </div>
 
-    </div>
+      </div>
+     </div>
   </div>
 
 
@@ -149,40 +158,204 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Background image 2"></div>
+    <div class="parallax"><img src="./img/background2.jpg" alt="Background image 2"></div>
   </div>
 
   <div class="container">
     <div class="section">
 
-      <div class="row">
+      <div class="row" id="formation-row">
 
         <div class="col s12 m4 center-on-small-only">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>ESIEE Paris </h4>
           <p class="left-align light " style="font-size: .8rem;">2022-2027</p>
           <p class="left-align light" style="line-height: 1.75rem;">
-            I studied at <span>ESIEE Paris</span> for five years. I first completed two years of an integrated
-            preparatory program where I discovered the fundamentals of computer science and electronics while continuing
-            to develop my knowledge in mathematics and physics. <br>
-            After these two preparatory years, I joined the Computer Science and Applications apprenticeship program 
-            (which is why I chose this school) for its generalist curriculum, allowing me to explore a
+            I studied at ESIEE Paris for five years. I first completed two years of an integrated preparatory
+            program, where I discovered the fundamentals of computer science and electronics while continuing
+            to build my knowledge of mathematics and physics. <br>
+            After these two preparatory years, I joined the Computer Science and Applications apprenticeship
+            program (the reason I chose this school) for its generalist curriculum, which let me explore a
             variety of fields, including 3D development with Unity.<br>
-            That same year, I joined <span>KNDS France Training</span> to further deepen my expertise in 3D.<br>
+            That same year, I joined KNDS France Training to further deepen my expertise in 3D.<br>
           </p>
         </div>
 
         <div class="col s12 m4 center-on-small-only">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>KNDS France Training</h4>
+          <h4>KNDS France Training </h4>
           <p class="left-align light " style="font-size: .8rem;">2024-2027</p>
           <p class="left-align light" style="line-height: 1.75rem;">
-            I completed my 3-year apprenticeship between KNDS France Training and ESIEE Paris.<br>
-            During this period, I built strong Unity skills through various professional academic and personal
-            projects.<br>
-            I also developed expertise in Unreal Engine both professionally and independently, as well as Machine
-            Learning skills,
-            specifically focusing on vision models and local LLMs (Ollama).<br>
+            I worked at KNDS France Training for 3 years.<br>
+            During this time, I developed strong Unity skills through various professional, academic and
+            personal projects.<br>
+            I also built expertise in Unreal Engine, both professionally and on my own, as well as Machine
+            Learning skills, with a focus on vision models and local LLMs (Ollama).<br>
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="overlay"></div>
+
+    <div class="section no-pad-bot" style="padding-left: 0px;">
+      <div class="container">
+
+        <div class="row center">
+          <h5 class="header col s12 light">Projects</h5>
+        </div>
+        <div class="row" id="projects-row">
+          <div class="col s12 m4">
+            <div class="card fade-in" style="color: black;">
+              <div class="card-image">
+                <a href="./1_WDTT.html"><img src="img/project_icon.png" alt="WDTT"></a>
+              </div>
+              <div style="padding-left: 4rem; padding-right: 1rem; padding-top: 0.5rem;">
+                <p><b>Where Darkness Took Them</b></p>
+              </div>
+              <div class="card-content">
+                <p>
+                  Game developed with Unity3D (C#) over two years at ESIEE Paris, in a team of 2.<br>
+                  An exploration and horror game where the player must escape a haunted mansion.
+                </p>
+              </div>
+              <div class="card-action" style="background-color: #E8D8DD ;">
+                <a href="https://github.com/Mathatou/Unity_Project_WDTT" target="_blank"
+                  style="padding-left: 8.5rem; color: black;">
+                  GitHub Link
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card fade-in" style="color: black;">
+              <div class="card-image">
+                <a href="./1_HOLDEM.html" target="_blank"><img src="img/affiche_game_jam.png" alt="Hold'Em"></a>
+              </div>
+              <div style="padding-left: 4rem; padding-right: 1rem; padding-top: 0.5rem;">
+                <p><b>Hold'Em</b></p>
+              </div>
+              <div class="card-content">
+                <p>
+                  Game developed with Python (Arcade) during a 2.5-day GameJam, in a team of 5.<br>
+                  The GameJam theme was "You are not the center of the story", so the player must try to slow
+                  down the hero as much as possible by playing as his enemies.
+                </p>
+              </div>
+              <div class="card-action" style="background-color: #E8D8DD;">
+                <a href="https://github.com/Mathatou/Gamejam" target="_blank"
+                  style="padding-left: 8.5rem;  color: black;">
+                  GitHub Link
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card fade-in" style="color: black;">
+              <div class="card-image">
+                <a href="./1_HITC.html"><img src="img/hitc.jpeg" alt="HeadInTheCloud"></a>
+              </div>
+              <div style="padding-left: 4rem; padding-right: 1rem; padding-top: 0.5rem;">
+                <p><b>Head In The Cloud</b></p>
+              </div>
+              <div class="card-content">
+                <p>
+                  Academic project developed with Unity3D (C#) over a few months.<br>
+                  A set of mini-games showcasing VR mechanics, particularly movement and object interaction.<br>
+                  It includes a shooting mini-game, an exploration mini-game and a puzzle mini-game.<br>
+                </p>
+              </div>
+              <div class="card-action " style="background-color: #E8D8DD ;">
+                <a href="https://github.com/Mathatou/HeadInTheCloud" target="_blank"
+                  style="padding-left: 8.5rem;  color: black;">
+                  GitHub Link
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card fade-in" style="color: black;">
+              <div class="card-image">
+                <a href="./1_CG.html" target="_blank"><img src="img/CG_img.png" alt="Computer Graphics"></a>
+              </div>
+              <div style="padding-left: 4rem; padding-right: 1rem; padding-top: 0.5rem;">
+                <p><b>Rendering Engine</b></p>
+              </div>
+              <div class="card-content">
+                <p>
+                  <b>Computer Graphics</b>
+                  Project developed with C++/OpenGL as a team project at school.<br>
+                  The project involved building a 3D rendering engine in C++/OpenGL capable of loading 3D
+                  models and displaying them with shaders.<br>
+                </p>
+              </div>
+              <div class="card-action " style="background-color: #E8D8DD ;">
+                <a href="https://github.com/Mathatou/OpenGL-Engine" target="_blank"
+                  style="padding-left: 8.5rem;  color: black;">
+                  GitHub Link
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="parallax"><img src="./img/background4.jpeg" alt="Background image 2"></div>
+
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row center">
+        <h5 class="section-title" style="padding-left: 0; padding-right: 10rem;">Hobbies</h5>
+      </div>
+
+      <div class="row" id="hobbies-row">
+
+        <div class="col s12 m3 center-on-small-only">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Arts </h4>
+          <p class="left-align light" style="line-height: 1.75rem;">
+            Self-taught piano, guitar and music theory, performed live as a beginner guitarist/singer<br>
+            Photography<br>
+            3D modeling<br>
+          </p>
+        </div>
+
+        <div class="col s12 m3 center-on-small-only">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Sports </h4>
+          <p class="left-align light" style="line-height: 1.75rem;">
+            Competitive archery since 2018 <br>Departmental (95) runner-up 2023<br>
+            Bouldering<br>
+            Weight training
+          </p>
+        </div>
+
+        <div class="col s12 m3 center-on-small-only">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Reading </h4>
+          <p class="left-align light" style="line-height: 1.75rem;">
+            Manga, Webtoons<br>
+            Crime novels, Sci-Fi
+          </p>
+        </div>
+
+        <div class="col s12 m3 center-on-small-only">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Video Games </h4>
+          <p class="left-align light" style="line-height: 1.75rem;">
+            FPS, Rogue-like, VR, Co-op<br>
+            Independent game development
           </p>
         </div>
 
@@ -192,90 +365,15 @@
   </div>
   <div class="parallax-container valign-wrapper">
     <div class="overlay"></div>
-
     <div class="section no-pad-bot" style="padding-left: 0px;">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">Projects</h5>
-        </div>
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="card" style="color: black;">
-              <div class="card-image">
-                <img src="img/project_icon.png">
-              </div>
-              <div class="card-content">
-                <p>
-                  Game developed with Unity3D(C#) during two years in team of 2.<br>
-                  It's an exploration and horror game where the players has to escape an haunted mansion.
-                </p>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/Mathatou/Unity_Project_WDTT" target="_blank" style="padding-left: 8.5rem;">
-                  Lien GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="card" style="color: black;">
-              <div class="card-image">
-                <img src="img/affiche_game_jam.png">
-              </div>
-              <div class="card-content">
-                <p>
-                  Game developed with Python (Arcade) during a 2.5 day GameJam in team of 5.<br>
-                  The GameJam theme was "You are not the center of the story", so the player has to try his best to slow
-                  down the hero by playing its enemies
-                </p>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/Mathatou/Gamejam" target="_blank" style="padding-left: 8.5rem;">
-                  GitHub Link
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="card" style="color: black;">
-              <div class="card-image">
-                <img src="img/colorshooter.png">
-              </div>
-              <div class="card-content">
-                <p>
-                  Game developed wiht Unity3D in VR(C#) solo on my free time.<br>
-                  This game is inspired by BeatSaber, you must shoot targets with matching color weapon.<br>
-                  <b>This image does absolutely not represent the real thing</b>
-                </p>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/Mathatou/Color-Shooter" target="_blank" style="padding-left: 8.5rem;">
-                  GitHub Link
-                </a>
-              </div>
-            </div>
-          </div>
-
+          <h4 class="header col s12 light">Find my GitHub and LinkedIn links along with my projects in the section
+            below</h4>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="overlay"></div>
-    <div class="section no-pad-bot" style="padding-left: 0px;">
-      <div class="container">
-        <div class="row center">
-          <h4 class="header col s12 light">Find my GitHub and LinkedIn links along with my projects in the section below
-            </h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Background image 3"></div>
+    <div class="parallax"><img src="./img/background3.jpg" alt="Background image 3"></div>
   </div>
 
   <footer class="page-footer teal">
@@ -297,10 +395,11 @@
         <div class="col l3 s12">
           <h5 class="white-text">Projects</h5>
           <ul>
-            <li><a class="white-text" href="https://github.com/Mathatou/Unity_Project_WDTT">Where the Shadows Took
+            <li><a class="white-text" href="https://github.com/Mathatou/Unity_Project_WDTT">Where Darkness Took
                 Them</a></li>
-            <li><a class="white-text" href="https://github.com/Mathatou/Gamejam">GameJam - Hold'em !</a></li>
-            <li><a class="white-text" href="https://github.com/Mathatou/Color-Shooter">Color Shooter</a></li>
+            <li><a class="white-text" href="https://github.com/Mathatou/Gamejam">GameJam - Hold'Em!</a></li>
+            <li><a class="white-text" href="https://github.com/Mathatou/HeadInTheCloud">Head In The Cloud</a></li>
+            <li><a class="white-text" href="https://github.com/Mathatou/OpenGL-Engine">Computer Graphics</a></li>
 
           </ul>
         </div>
@@ -314,9 +413,11 @@
   </footer>
 
 
+  <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/fadeIn.js"></script>
 
 </body>
 
