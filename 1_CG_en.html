@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>AUBRY Mathias - Computer Graphics</title>
+  <link rel="icon" type="image/x-icon" href="img/myBigCrane.png">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style_CG.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">
+        <img src="img/myBigCrane.png" alt="MyLogo" style="height: 60px;">
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Switch to FR</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index.html">Switch to FR</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="overlay"></div>
+    <div class="section no-pad-bot" style="padding-left: 0px;">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Computer Graphics</h1>
+        <p class="header center light" style="font-size: 1.1rem; margin-top: -10px;">
+          OpenGL 3.3 Core Rendering Engine — C++ / GLSL — ESIEE Paris, E4FI (2026)
+        </p>
+        <div class="row center" style="margin-bottom: 0;">
+          <a href="https://github.com/Mathatou/-E4FI---Projet-Computer-Graphics" target="_blank"
+            class="btn-large waves-effect waves-light teal lighten-1" style="margin: 6px;">
+            <i class="material-icons left">code</i>View on GitHub
+          </a>
+        </div>
+        <div class="row center" style="margin-top: 24px;">
+          <a href="index_en.html" class="light grey-text text-lighten-3">&larr; Back to projects</a>
+        </div>
+        <br>
+      </div>
+    </div>
+    <div class="parallax"><img src="./img/CG_img.png" alt="Computer Graphics background"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h5 class="section-title">📌 Description</h5>
+            <p class="light">
+              Project developed in OpenGL 3.3 Core Profile (GLSL 330) by AUBRY Mathias and TOUSSAINT Nolan. It is
+              a real-time 3D rendering engine implementing a complete pipeline: model loading,
+              direct and indirect lighting, off-screen rendering, and post-processing, featuring a real-time control interface.
+            </p>
+            <div class="center" style="margin: 1.5rem 0;">
+              <img src="./img/CG_img.png"
+                alt="Computer Graphics project scene" class="responsive-img"
+                style="border-radius: 10px; max-height: 420px;">
+              <p class="light" style="font-size: .85rem; margin-top: .5rem;"><i>Project scene</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin: 2.5rem 0;"></div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h5 class="section-title">🖼️ Rendering & Display</h5>
+            <ul class="light">
+              <li><b>3D Model Loading:</b> four objects displayed simultaneously — Kirby, Miles Morales, and
+                Gamma loaded from <code>.obj</code> files via TinyObjLoader (<code>.mtl</code> materials
+                and textures via stb_image), and the Dragon loaded from a raw data array.</li>
+              <li><b>Direct Lighting (Phong / Blinn-Phong):</b> diffuse (Lambert) and specular
+                (Phong and Blinn-Phong) components combined with OBJ textures and materials.</li>
+              <li><b>Indirect Lighting:</b> hemispherical ambient light (ground/sky interpolation based on the
+                normal) and Fresnel-Schlick approximation, featuring material presets (gold, water, silver,
+                bronze).</li>
+              <li><b>Off-screen Rendering (FBO):</b> main rendering performed inside a Framebuffer Object, copied to the
+                backbuffer via a full-screen quad to enable post-processing; gamma correction via
+                <code>GL_FRAMEBUFFER_SRGB</code>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin: 2.5rem 0;"></div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h5 class="section-title">🧭 Navigation</h5>
+            <ul class="light">
+              <li><b>Object Placement:</b> each model has its own world matrix (Translation ×
+                Rotation × Scale), adjustable in real time.</li>
+              <li><b>Camera UBO:</b> view and projection matrices grouped within a Uniform Buffer Object
+                shared between the main shader and the skybox shader.</li>
+              <li><b>Orbital Camera:</b> orbits in spherical coordinates around the origin — left-click +
+                drag to rotate, scroll wheel to zoom, <code>R</code> key to reset the view.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin: 2.5rem 0;"></div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h5 class="section-title">⚙️ Options</h5>
+            <p class="light"><b>8 post-processing effects</b> selectable via ImGui (applied in full screen on the
+              FBO texture): none (passthrough), color inversion, black &amp; white, box blur (3×3),
+              sepia, edge detection (convolution kernel), chromatic aberration, pixelation.</p>
+            <p class="light"><b>Cubemap Skybox</b> with 6 faces (PNG), sharing the camera UBO and drawn last
+              using <code>GL_LEQUAL</code>.</p>
+            <p class="light"><b>ImGui Interface</b> to adjust materials and textures for each
+              object in real time, along with their position, scale, camera parameters, post-processing effects, and the
+              Fresnel reflectivity preset.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin: 2.5rem 0;"></div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h5 class="section-title">🛠 Dependencies</h5>
+            <ul class="light">
+              <li>OpenGL 3.3, GLEW, GLFW</li>
+              <li><a href="https://github.com/tinyobjloader/tinyobjloader" target="_blank">TinyObjLoader</a></li>
+              <li><a href="https://github.com/nothings/stb" target="_blank">stb_image</a></li>
+              <li><a href="https://github.com/ocornut/imgui" target="_blank">Dear ImGui</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h5 class="section-title">🎮 Controls</h5>
+            <ul class="light">
+              <li>Orbit camera: <b>Left click + drag</b></li>
+              <li>Zoom: <b>Mouse wheel</b></li>
+              <li>Reset camera: <b>R key</b></li>
+              <li>Quit: <b>Esc key</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider" style="margin: 2.5rem 0;"></div>
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h5 class="section-title">👥 Team</h5>
+            <ul class="light">
+              <li>AUBRY Mathias</li>
+              <li>TOUSSAINT Nolan</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h5 class="section-title">📜 License &amp; Credits</h5>
+            <p class="light" style="font-size: .9rem; line-height: 1.6rem;">
+              This project was carried out within an academic framework (ESIEE Paris, E4FI) and is not intended for commercial
+              distribution. Third-party libraries (TinyObjLoader, stb_image, Dear ImGui) are used under
+              their respective licenses.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="overlay"></div>
+    <div class="section no-pad-bot" style="padding-left: 0px;">
+      <div class="container">
+        <div class="row center">
+          <h4 class="header col s12 light">Find my GitHub and LinkedIn links as well as my projects in the section below</h4>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./img/CG_img.png" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="grey-text text-lighten-4" href="https://github.com/Mathatou">GitHub</a>
+            </li>
+            <li>
+              <a class="grey-text text-lighten-4" href="https://www.linkedin.com/in/mathias-aubry/">LinkedIn</a>
+            </li>
+          </ul>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Projects</h5>
+          <ul>
+            <li><a class="white-text" href="https://github.com/Mathatou/Unity_Project_WDTT">Where Darkness Took
+                Them</a></li>
+            <li><a class="white-text" href="https://github.com/Mathatou/Gamejam">GameJam - Hold'em !</a></li>
+            <li><a class="white-text" href="https://github.com/Mathatou/HeadInTheCloud">Head In The Cloud</a></li>
+            <li><a class="white-text" href="https://github.com/Mathatou/-E4FI---Projet-Computer-Graphics">Computer Graphics</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made using <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
